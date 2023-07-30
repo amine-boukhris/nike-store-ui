@@ -14,7 +14,7 @@
         <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet" />
 
         <link rel="stylesheet" href="./styles/modern-normalize.css" />
-        <link rel="stylesheet" href="./styles/style.css" />
+        <!-- <link rel="stylesheet" href="./styles/style.css" /> TODO: adjust colors -->
         <link rel="stylesheet" href="./styles/utils.css" />
 
         <link rel="stylesheet" href="./styles/components/header.css" />
@@ -25,13 +25,152 @@
         <link rel="stylesheet" href="./styles/components/footer.css" />
     </head>
     <body>
-        <header class="header container">header</header>
+        <header class="header container">
+            <div class="header__logo"><img src="#" alt="logo" /></div>
+            <div class="header__nav-list">
+                <ul class="header__nav-list-links">
+                    <li> <a class="header__link" href="#"> MAN           </a> </li>
+                    <li> <a class="header__link" href="#"> WOMAN         </a> </li>
+                    <li> <a class="header__link" href="#"> KIDS          </a> </li>
+                    <li> <a class="header__link" href="#"> COLLECTIONS   </a> </li>
+                    <li> <a class="header__link" href="#"> CONTACT       </a> </li>
+                </ul>
+            </div>
+            <div class="header__nav-actions">
+                <button class="header__search-button btn"> SEARCH </button>
+                <button class="header__mycart-button btn">
+                    MY CART
+                    <span class="header__mycart-notifications">(1)</span>
+                </button>
+            </div>
+        </header>
         <main>
-            <section class="hero container">hero</section>
-            <section class="featured container">featured</section>
-            <section class="trending container">trending</section>
-            <section class="custom container">custom</section>
+            <section class="hero container">
+                <div class="hero__info">
+                    <p class="hero__subtitle">Men's Shoe</p>
+                    <h1 class="hero__title">New Jordan 6 Rings</h1>
+                    <p class="hero__description">
+                        The Jordan 6 Rings Shoe celebrates a legendary career with classic design lines and detailing for streamlined hoops styles
+                    </p>
+                    <button class="hero__cta-button btn">Go to collection</button>
+                </div>
+                <div class="hero__image">
+                    <!-- <img src="#" alt="yellow strip"> postion absolute -->
+                    <img src="#" alt="hero sneakers image">
+                    <!-- <img src="#" alt="fading strip"> postion absolute -->
+                </div>
+            </section>
+            <section class="featured container">
+                <div class="featured__header">
+                    <h2 class="featured__title">Top Picks</h2>
+                    <div class="featured__controls">
+                        <button class="featured__controls-button-left" data-temp="left arrow code">x</button>
+                        <button class="featured__controls-button-right" data-temp="right arrow code">x</button>
+                    </div>
+                </div>
+                <div class="featured__cards">
+                    <div class="featured__card">
+                        <div class="featured__card-image"><img src="#" alt="card shoe image"></div>
+                        <div class="featured__card-description">
+                            <h6 class="featured__card-title">Kyrie 5 x Friends</h6>
+                            <p class="featured__card-price">$114.95</p>
+                        </div>
+                    </div>
+                    <div class="featured__card">
+                        <div class="featured__card-image"><img src="#" alt="card shoe image"></div>
+                        <div class="featured__card-description">
+                            <h6 class="featured__card-title">Nike Air Max 720</h6>
+                            <p class="featured__card-price">$154.95</p>
+                        </div>
+                    </div>
+                    <div class="featured__card">
+                        <div class="featured__card-image"><img src="#" alt="card shoe image"></div>
+                        <div class="featured__card-description">
+                            <h6 class="featured__card-title">Nike Zoom Pegasus 35 turbo BRS</h6>
+                            <p class="featured__card-price">$159.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured__selection-bar"></div>
+            </section>
+            <section class="trending container">
+                <h2 class="trending__title">Trending Now</h2>
+                <div class="trending__featured-card">
+                    <p class="trending__featured-card-subtitle">New from Nike sportswear</p>
+                    <h3 class="trending__featured-card-title">REACT PRESTO</h3>
+                    <p class="trending__featured-card-description">With React foam for the most comfortable Presto ever</p>
+                    <button class="trending__featured-card-cta-button btn">Shop</button>
+                </div>
+                <div class="trending__cards">
+                    <div class="trending__card">
+                        <h4 class="trending__card-title">
+                            Summer Must-Haves: <br />
+                            Air Max Dia
+                        </h4>
+                    </div>
+                    <div class="trending-card">
+                        <h4 class="trending__card-title">
+                            Air Jordan 11 Retro <br />
+                            Low LE
+                        </h4>
+                    </div>
+                </div>
+            </section>
+            <section class="custom container">
+                <div class="custom__info">
+                    <p class="custom__subtitle">Create your design</p>
+                    <h1 class="custom__title">NIKE REACT PRESTO BY YOU</h1>
+                    <p class="custom__description">
+                        Take advantage of brand new, proprietary cushioning technology with a fresh pair of Nike React shoes
+                    </p>
+                    <button class="custom__cta-button btn">Create</button>
+                </div>
+                <div class="custom__image">
+                    <!-- <img src="#" alt="yellow strip"> postion absolute -->
+                    <img src="#" alt="hero sneakers image">
+                </div>
+            </section>
         </main>
-        <footer class="footer container">footer</footer>
+        <footer class="footer container">
+            <div class="footer__brand"></div>
+            <div class="footer__content">
+                <div class="footer__menu">
+                    <h6 class="footer__menu-title">Info</h6>
+                    <div class="footer__menu-links">
+                        <ul class="footer__menu-links-list">
+                            <li> <a class="footer__link" href="#"> Find a store    </a> </li>
+                            <li> <a class="footer__link" href="#"> Discount        </a> </li>
+                            <li> <a class="footer__link" href="#"> Gift            </a> </li>
+                            <li> <a class="footer__link" href="#"> Feedback        </a> </li>
+                            <li> <a class="footer__link" href="#"> Become a member </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__menu">
+                    <h6 class="footer__menu-title">Shop</h6>
+                    <div class="footer__menu-links">
+                        <ul class="footer__menu-links-list">
+                            <li> <a class="footer__link" href="#"> Man             </a> </li>
+                            <li> <a class="footer__link" href="#"> Woman           </a> </li>
+                            <li> <a class="footer__link" href="#"> Kids            </a> </li>
+                            <li> <a class="footer__link" href="#"> Collections     </a> </li>
+                            <li> <a class="footer__link" href="#"> Contact         </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__menu">
+                    <h6 class="footer__menu-title">About</h6>
+                    <div class="footer__menu-links">
+                        <ul class="footer__menu-links-list">
+                            <li> <a class="footer__link" href="#"> News            </a> </li>
+                            <li> <a class="footer__link" href="#"> Careers         </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__social-media"></div>
+        </footer>
+
+        <!-- <script src="./src/script.js"></script> -->
     </body>
 </html>
