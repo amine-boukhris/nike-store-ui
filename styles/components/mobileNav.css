@@ -1,0 +1,40 @@
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: var(--size-3xl);
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 70%;
+    max-width: 500px;
+    padding-top: 5rem;
+    background-color: white;
+    z-index: 10;
+}
+
+.mobile__nav-list-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    gap: var(--size-3xl);
+}
+
+.mobile__link {
+    color: black;
+    font-weight: 600;
+    font-size: var(--size-sm);
+}
+
+.displaynone {
+    display: none;
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .mobile-nav {
+        display: none;
+    }
+}

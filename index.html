@@ -13,8 +13,12 @@
 
         <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet" />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <link rel="stylesheet" href="./styles/modern-normalize.css" />
-        <!-- <link rel="stylesheet" href="./styles/style.css" /> TODO: adjust colors -->
+        <link rel="stylesheet" href="./styles/style.css" />
         <link rel="stylesheet" href="./styles/utils.css" />
 
         <link rel="stylesheet" href="./styles/components/header.css" />
@@ -23,10 +27,11 @@
         <link rel="stylesheet" href="./styles/components/trending.css" />
         <link rel="stylesheet" href="./styles/components/custom.css" />
         <link rel="stylesheet" href="./styles/components/footer.css" />
+        <link rel="stylesheet" href="./styles/components/mobileNav.css" />
     </head>
     <body>
         <header class="header container">
-            <div class="header__logo"><img src="#" alt="logo" /></div>
+            <div class="header__logo"><img src="assets/nike-logo.png" alt="logo" /></div>
             <div class="header__nav-list">
                 <ul class="header__nav-list-links">
                     <li> <a class="header__link" href="#"> MAN           </a> </li>
@@ -37,13 +42,24 @@
                 </ul>
             </div>
             <div class="header__nav-actions">
-                <button class="header__search-button btn"> SEARCH </button>
-                <button class="header__mycart-button btn">
-                    MY CART
-                    <span class="header__mycart-notifications">(1)</span>
+                <button class="header__search-button"> SEARCH </button>
+                <button class="header__mycart-button">
+                    MY CART ( 1 )
                 </button>
             </div>
+            <div class="header__mobile-menu">
+                <i class="fa-solid fa-bars header__mobile-menu-icon"></i>
+            </div>
         </header>
+        <div class="mobile-nav displaynone">
+            <ul class="mobile__nav-list-links">
+                <li> <a class="mobile__link" href="#"> MAN           </a> </li>
+                <li> <a class="mobile__link" href="#"> WOMAN         </a> </li>
+                <li> <a class="mobile__link" href="#"> KIDS          </a> </li>
+                <li> <a class="mobile__link" href="#"> COLLECTIONS   </a> </li>
+                <li> <a class="mobile__link" href="#"> CONTACT       </a> </li>
+            </ul>
+        </div>
         <main>
             <section class="hero container">
                 <div class="hero__info">
@@ -171,6 +187,6 @@
             <div class="footer__social-media"></div>
         </footer>
 
-        <!-- <script src="./src/script.js"></script> -->
+        <script src="./src/script.js"></script>
     </body>
 </html>
