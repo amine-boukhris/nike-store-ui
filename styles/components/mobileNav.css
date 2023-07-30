@@ -12,6 +12,7 @@
     padding-top: 5rem;
     background-color: white;
     z-index: 10;
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
 }
 
 .mobile__nav-list-links {

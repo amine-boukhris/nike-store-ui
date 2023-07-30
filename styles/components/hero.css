@@ -1,0 +1,60 @@
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../assets/running2.jpg);
+
+    /* height: 50vh; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+}
+
+.hero__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-xxs);
+}
+
+.hero__subtitle {
+    color: var(--clr-slate600);
+    font-size: var(--size-sm);
+}
+
+.hero__title {
+    font-size: var(--size-3xl);
+    font-weight: 700;
+    text-align: center;
+}
+
+.hero__description {
+    color: var(--clr-slate800);
+    font-size: var(--size-sm);
+    text-align: center;
+}
+
+.hero__cta-button {
+    margin-top: var(--size-lg);
+    font-size: var(--size-sm);
+}
+
+
+/* md */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        padding: 4rem 5rem;
+    }
+
+    .hero__info {
+        align-items: start;
+    }
+
+    .hero__description, .hero__title {
+        text-align: start;
+    }
+}

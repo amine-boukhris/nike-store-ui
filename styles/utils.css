@@ -27,11 +27,13 @@
     border-radius: 0px;
     border: none;
     filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
-    transition: all 0.3s ease-in;
+    transition: all 0.1s ease-in;
 }
 
 .btn:hover {
     filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
 }
 
 .container {
@@ -42,7 +44,7 @@
     padding-right: 0.5rem;
 
     /* to delete */
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .section {
