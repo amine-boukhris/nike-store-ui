@@ -13,11 +13,16 @@
     padding: 2rem 3rem;
 }
 
+.hero__image {
+    flex: 1;
+}
+
 .hero__info {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--size-xxs);
+    flex: 1;
 }
 
 .hero__subtitle {
@@ -35,6 +40,7 @@
     color: var(--clr-slate800);
     font-size: var(--size-sm);
     text-align: center;
+    max-width: 60ch;
 }
 
 .hero__cta-button {
