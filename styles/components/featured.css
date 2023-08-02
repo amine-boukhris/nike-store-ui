@@ -75,7 +75,7 @@
 }
 
 .featured__selection-bar {
-    width: 60%;
+    width: 100%;
 }
 
 
@@ -97,6 +97,9 @@
     .featured__card-seperator {
         display: none;
     }
+    .featured__selection-bar {
+        width: 80%;
+    }
 }
 
 /* md */
@@ -110,6 +113,9 @@
 @media (min-width: 1024px) {
     .featured {
         padding: 2rem 3rem;
+    }
+    .featured__selection-bar {
+        width: 60%;
     }
 }
 

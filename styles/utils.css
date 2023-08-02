@@ -23,7 +23,7 @@
     letter-spacing: -0.05em;
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    padding: 0.6em 1.2em;
+    padding: 0.8em 1.6em;
     border-radius: 0px;
     border: none;
     filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
